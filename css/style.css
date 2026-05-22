@@ -5,7 +5,7 @@
 * { margin: 0; padding: 0; box-sizing: border-box; }
 html { scroll-behavior: smooth; }
 body {
-    font-family: 'PingFang SC', 'Microsoft YaHei', -apple-system, sans-serif;
+    font-family: 'PingFang SC', 'Source Han Sans CN', 'Microsoft YaHei', -apple-system, sans-serif;
     background: #080c14;
     color: #fff;
     overflow-x: hidden;
@@ -402,13 +402,14 @@ section { padding: 110px 60px; }
     font-size: 11px;
     letter-spacing: 4px;
     color: #00d4ff;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
     text-transform: uppercase;
 }
 .contact-item span {
-    color: rgba(255,255,255,0.6);
-    font-size: 14px;
+    color: rgba(255,255,255,0.75);
+    font-size: 16px;
     letter-spacing: 1px;
+    font-weight: 500;
 }
 
 /* ============================================
@@ -459,3 +460,28 @@ footer {
     .about-stats { flex-direction: column; gap: 30px; }
     .contact-grid { grid-template-columns: 1fr; }
 }
+/* ============================================
+   Language Switcher
+   ============================================ */
+.lang-switch {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+.lang-switch span {
+    color: rgba(255,255,255,0.3);
+    font-size: 12px;
+}
+.lang-switch a {
+    color: rgba(255,255,255,0.4);
+    font-size: 13px;
+    letter-spacing: 1px;
+    transition: color 0.3s;
+}
+.lang-switch a.active,
+.lang-switch a:hover { color: #00d4ff; }
+
+/* English content - hidden by default */
+body:not(.lang-en) .en { display: none; }
+body.lang-en .cn { display: none; }
+body.lang-en .zh { display: none; }

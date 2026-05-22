@@ -111,3 +111,16 @@ document.addEventListener('DOMContentLoaded', () => {
         statsObserver.observe(statsSection);
     }
 });
+// Language Switcher
+document.querySelectorAll('.lang-switch a').forEach(link => {
+    link.addEventListener('click', () => {
+        const isEn = link.classList.contains('lang-en');
+        document.querySelectorAll('.lang-switch a').forEach(a => a.classList.remove('active'));
+        link.classList.add('active');
+        if (isEn) {
+            document.body.classList.add('lang-en');
+        } else {
+            document.body.classList.remove('lang-en');
+        }
+    });
+});
