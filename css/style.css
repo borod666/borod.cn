@@ -5,11 +5,12 @@
 * { margin: 0; padding: 0; box-sizing: border-box; }
 html { scroll-behavior: smooth; }
 body {
-    font-family: 'PingFang SC', 'Source Han Sans CN', 'Microsoft YaHei', -apple-system, sans-serif;
+    font-family: 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', -apple-system, sans-serif;
     background: #080c14;
     color: #fff;
     overflow-x: hidden;
     line-height: 1.6;
+    font-weight: 400;
 }
 
 /* ============================================
