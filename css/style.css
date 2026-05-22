@@ -433,10 +433,22 @@ footer {
    Responsive
    ============================================ */
 @media (max-width: 768px) {
-    nav { padding: 18px 24px; }
-    .nav-links { display: none; }
-    section { padding: 80px 24px; }
-    .hero h1 { font-size: 32px; letter-spacing: 6px; }
+    nav { padding: 16px 20px; }
+    .nav-links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+        position: fixed;
+        top: 60px;
+        left: 0;
+        right: 0;
+        background: rgba(6,10,20,0.97);
+        padding: 20px;
+        border-bottom: 1px solid rgba(0,212,255,0.1);
+    }
+    .nav-links a { font-size: 13px; letter-spacing: 2px; }
+    section { padding: 80px 20px; }
+    .hero h1 { font-size: 28px; letter-spacing: 6px; }
     .about-stats { flex-direction: column; gap: 30px; }
     .contact-grid { grid-template-columns: 1fr; }
 }
