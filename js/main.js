@@ -117,10 +117,7 @@ document.querySelectorAll('.lang-switch a').forEach(link => {
         const isEn = link.classList.contains('lang-en');
         document.querySelectorAll('.lang-switch a').forEach(a => a.classList.remove('active'));
         link.classList.add('active');
-        if (isEn) {
-            document.body.classList.add('lang-en');
-        } else {
-            document.body.classList.remove('lang-en');
-        }
+        document.querySelectorAll('.en').forEach(el => el.style.display = isEn ? '' : 'none');
+        document.querySelectorAll('.zh').forEach(el => el.style.display = isEn ? 'none' : '');
     });
 });
