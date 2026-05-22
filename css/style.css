@@ -1,13 +1,12 @@
 /* ============================================
-   BOROD Website Global Styles
+   BOROD Website - Red & Black Theme
    ============================================ */
 
-/* Reset & Base */
 * { margin: 0; padding: 0; box-sizing: border-box; }
 html { scroll-behavior: smooth; }
 body {
     font-family: 'PingFang SC', 'Microsoft YaHei', -apple-system, sans-serif;
-    background: #0a0a0f;
+    background: #0a0000;
     color: #fff;
     overflow-x: hidden;
     line-height: 1.6;
@@ -20,7 +19,7 @@ body {
     position: fixed;
     top: 0; left: 0;
     width: 100%; height: 100%;
-    background: #0a0a0f;
+    background: #0a0000;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -41,7 +40,7 @@ body {
     opacity: 0;
     animation: fadeInUp 1s ease forwards;
 }
-.loader-logo span { color: #00d4ff; }
+.loader-logo span { color: #ff3c3c; }
 .loader-bar {
     width: 200px;
     height: 2px;
@@ -54,7 +53,7 @@ body {
     display: block;
     width: 0%;
     height: 100%;
-    background: linear-gradient(90deg, #00d4ff, #00ff88);
+    background: linear-gradient(90deg, #ff3c3c, #ff7744);
     animation: loading 2.2s ease forwards;
 }
 .loader-text {
@@ -78,35 +77,49 @@ body {
 nav {
     position: fixed;
     top: 0; left: 0; right: 0;
-    padding: 22px 60px;
+    padding: 20px 60px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: rgba(10,10,15,0.92);
+    background: rgba(10,0,0,0.95);
     backdrop-filter: blur(20px);
     z-index: 1000;
-    border-bottom: 1px solid rgba(255,255,255,0.05);
+    border-bottom: 1px solid rgba(255,60,60,0.12);
 }
 .logo {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+}
+.logo-borod {
     font-size: 22px;
     font-weight: 900;
     letter-spacing: 8px;
+    color: #fff;
 }
-.logo span { color: #00d4ff; }
+.logo-borod span { color: #ff3c3c; }
+.logo-text {
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 8px;
+    color: rgba(255,255,255,0.45);
+    font-family: 'Microsoft YaHei', 'PingFang SC', sans-serif;
+}
 .nav-links {
     display: flex;
-    gap: 42px;
+    gap: 48px;
     list-style: none;
 }
 .nav-links a {
     color: rgba(255,255,255,0.55);
     text-decoration: none;
-    font-size: 13px;
+    font-size: 14px;
     letter-spacing: 3px;
+    font-weight: 500;
     transition: color 0.3s;
 }
 .nav-links a:hover,
-.nav-links a.active { color: #00d4ff; }
+.nav-links a.active { color: #ff3c3c; }
 
 /* ============================================
    Hero
@@ -118,7 +131,7 @@ nav {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background: linear-gradient(180deg, #0a0a0f 0%, #0f1520 100%);
+    background: linear-gradient(180deg, #0a0000 0%, #150404 100%);
     position: relative;
     overflow: hidden;
 }
@@ -126,19 +139,19 @@ nav {
     content: '';
     position: absolute;
     width: 100%; height: 100%;
-    background: radial-gradient(ellipse at 50% 50%, rgba(0,212,255,0.07) 0%, transparent 65%);
+    background: radial-gradient(ellipse at 50% 50%, rgba(255,60,60,0.08) 0%, transparent 65%);
 }
 .hero::after {
     content: '';
     position: absolute;
     bottom: 0; left: 0; right: 0;
     height: 120px;
-    background: linear-gradient(to top, #0a0a0f, transparent);
+    background: linear-gradient(to top, #0a0000, transparent);
 }
 .hero-tag {
     font-size: 11px;
     letter-spacing: 8px;
-    color: #00d4ff;
+    color: #ff3c3c;
     text-transform: uppercase;
     margin-bottom: 28px;
     opacity: 0;
@@ -152,8 +165,9 @@ nav {
     margin-bottom: 20px;
     opacity: 0;
     animation: fadeInUp 1s ease 2.7s forwards;
+    text-shadow: 0 0 80px rgba(255,60,60,0.12);
 }
-.hero h1 span { color: #00d4ff; }
+.hero h1 span { color: #ff3c3c; }
 .hero p {
     font-size: 15px;
     color: rgba(255,255,255,0.45);
@@ -164,8 +178,8 @@ nav {
 }
 .hero-btn {
     padding: 15px 46px;
-    border: 1px solid #00d4ff;
-    color: #00d4ff;
+    border: 1px solid #ff3c3c;
+    color: #ff3c3c;
     background: transparent;
     font-size: 13px;
     letter-spacing: 4px;
@@ -175,8 +189,8 @@ nav {
     animation: fadeInUp 1s ease 3.1s forwards;
 }
 .hero-btn:hover {
-    background: #00d4ff;
-    color: #0a0a0f;
+    background: #ff3c3c;
+    color: #0a0000;
 }
 
 /* ============================================
@@ -201,14 +215,14 @@ section { padding: 110px 60px; }
 .section-title .line {
     width: 50px;
     height: 2px;
-    background: linear-gradient(90deg, #00d4ff, #00ff88);
+    background: linear-gradient(90deg, #ff3c3c, #ff7744);
     margin: 18px auto 0;
 }
 
 /* ============================================
    About
    ============================================ */
-#about { background: #0f1520; }
+#about { background: #120202; }
 .about-content {
     max-width: 860px;
     margin: 0 auto;
@@ -227,7 +241,7 @@ section { padding: 110px 60px; }
 .stat-item .num {
     font-size: 42px;
     font-weight: 900;
-    color: #00d4ff;
+    color: #ff3c3c;
     display: block;
 }
 .stat-item .label {
@@ -255,9 +269,9 @@ section { padding: 110px 60px; }
     transition: all 0.35s;
 }
 .service-card:hover {
-    border-color: rgba(0,212,255,0.4);
+    border-color: rgba(255,60,60,0.4);
     transform: translateY(-8px);
-    box-shadow: 0 20px 40px rgba(0,212,255,0.06);
+    box-shadow: 0 20px 40px rgba(255,60,60,0.08);
 }
 .service-icon {
     font-size: 36px;
@@ -277,7 +291,7 @@ section { padding: 110px 60px; }
 /* ============================================
    Cases
    ============================================ */
-#cases { background: #0f1520; }
+#cases { background: #120202; }
 .cases-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -299,7 +313,7 @@ section { padding: 110px 60px; }
     color: inherit;
 }
 .case-card:hover {
-    border-color: rgba(0,212,255,0.4);
+    border-color: rgba(255,60,60,0.4);
     transform: translateY(-4px);
 }
 .case-card h3 {
@@ -315,9 +329,9 @@ section { padding: 110px 60px; }
     display: inline-block;
     margin-top: 12px;
     padding: 4px 12px;
-    border: 1px solid rgba(0,212,255,0.3);
+    border: 1px solid rgba(255,60,60,0.3);
     font-size: 11px;
-    color: #00d4ff;
+    color: #ff3c3c;
     letter-spacing: 2px;
 }
 
@@ -339,7 +353,7 @@ section { padding: 110px 60px; }
 .article-item:hover { padding-left: 10px; }
 .article-item .article-date {
     font-size: 12px;
-    color: #00d4ff;
+    color: #ff3c3c;
     letter-spacing: 2px;
     min-width: 90px;
 }
@@ -380,7 +394,7 @@ section { padding: 110px 60px; }
     display: block;
     font-size: 11px;
     letter-spacing: 4px;
-    color: #00d4ff;
+    color: #ff3c3c;
     margin-bottom: 10px;
     text-transform: uppercase;
 }
@@ -396,7 +410,7 @@ section { padding: 110px 60px; }
 footer {
     padding: 36px 60px;
     text-align: center;
-    border-top: 1px solid rgba(255,255,255,0.05);
+    border-top: 1px solid rgba(255,60,60,0.1);
     color: rgba(255,255,255,0.28);
     font-size: 12px;
     letter-spacing: 2px;
