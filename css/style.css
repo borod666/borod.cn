@@ -192,14 +192,14 @@ nav {
     clip-path: polygon(26px 0, 100% 0, 100% 100%, 0 100%);
 }
 .hero-subtitle {
-    font-size: 17px;
-    color: rgba(255,255,255,0.75);
+    font-size: 22px;
+    color: rgba(255,255,255,0.82);
     letter-spacing: 5px;
     margin-bottom: 0;
     opacity: 0;
     animation: fadeInUp 1s ease 2.7s forwards;
     font-weight: 500;
-    text-shadow: 0 0 20px rgba(0,212,255,0.3);
+    text-shadow: 0 0 20px rgba(0,212,255,0.35);
 }
 .hero-btn {
     padding: 15px 46px;
