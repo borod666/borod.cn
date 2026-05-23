@@ -145,37 +145,23 @@ nav {
     background: linear-gradient(to top, #080c14, transparent);
     z-index: 2;
 }
-.hero-content {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-58%);
-    z-index: 3;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: linear-gradient(
-        90deg,
-        rgba(10, 22, 40, 0.70) 0%,
-        rgba(10, 22, 40, 0.65) 45%,
-        rgba(10, 22, 40, 0.50) 50%,
-        rgba(255, 255, 255, 0.08) 55%,
-        rgba(255, 255, 255, 0.10) 100%
-    );
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
-    border: 1px solid rgba(0, 212, 255, 0.15);
-    box-shadow: 0 8px 60px rgba(0,0,0,0.6), 0 0 80px rgba(0,212,255,0.05);
-    padding: 28px 48px 24px;
-    clip-path: polygon(0 0, calc(100% - 70px) 0, 100% 100%, 0 100%);
-}
 .hero-title-split {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 4px;
-    margin-bottom: 16px;
+    margin-bottom: 14px;
     opacity: 0;
     animation: fadeInUp 1s ease 2.5s forwards;
+    background: linear-gradient(
+        90deg,
+        rgba(10, 22, 40, 0.78) 0%,
+        rgba(10, 22, 40, 0.65) 50%,
+        rgba(10, 22, 40, 0.50) 100%
+    );
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(0, 212, 255, 0.18);
+    clip-path: polygon(0 0, calc(100% - 55px) 0, 100% 100%, 0 100%);
 }
 .hero-box-left {
     font-size: 54px;
@@ -183,7 +169,7 @@ nav {
     letter-spacing: 8px;
     line-height: 1.3;
     color: #fff;
-    padding: 0;
+    padding: 12px 24px;
 }
 .hero-box-right {
     font-size: 54px;
@@ -191,16 +177,23 @@ nav {
     letter-spacing: 8px;
     line-height: 1.3;
     color: #fff;
-    padding: 0;
+    padding: 12px 36px 12px 24px;
+    border-left: none;
 }
 .hero-subtitle {
     font-size: 22px;
-    color: rgba(255,255,255,0.90);
+    color: rgba(255,255,255,0.92);
     letter-spacing: 5px;
-    margin-bottom: 0;
     opacity: 0;
     animation: fadeInUp 1s ease 2.7s forwards;
     font-weight: 500;
+    padding: 12px 36px;
+    background: rgba(10, 22, 40, 0.62);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+    border: 1px solid rgba(0, 212, 255, 0.18);
+    box-shadow: 0 4px 30px rgba(0,0,0,0.4), 0 0 40px rgba(0,212,255,0.04);
+    margin-bottom: 0;
 }
 .hero-btn {
     padding: 15px 46px;
