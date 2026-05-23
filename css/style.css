@@ -163,14 +163,14 @@ nav {
     animation: fadeInUp 1s ease 2.5s forwards;
     background: linear-gradient(
         90deg,
-        rgba(10, 22, 40, 0.78) 0%,
-        rgba(10, 22, 40, 0.65) 50%,
-        rgba(10, 22, 40, 0.50) 100%
+        #0a1628 0%,
+        rgba(10, 22, 40, 0.85) 40%,
+        rgba(30, 55, 90, 0.55) 70%,
+        rgba(180, 200, 220, 0.18) 100%
     );
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     border: 1px solid rgba(0, 212, 255, 0.18);
-    clip-path: polygon(0 0, calc(100% - 55px) 0, 100% 100%, 0 100%);
 }
 .hero-box-left {
     font-size: 54px;
@@ -191,16 +191,21 @@ nav {
 }
 .hero-subtitle {
     font-size: 22px;
-    color: rgba(255,255,255,0.92);
+    color: rgba(255,255,255,0.95);
     letter-spacing: 5px;
     opacity: 0;
     animation: fadeInUp 1s ease 2.7s forwards;
     font-weight: 500;
-    padding: 12px 36px;
-    background: rgba(10, 22, 40, 0.62);
+    padding: 12px 40px;
+    background: linear-gradient(
+        90deg,
+        #0a1628 0%,
+        rgba(10, 22, 40, 0.80) 60%,
+        rgba(20, 40, 70, 0.60) 100%
+    );
     backdrop-filter: blur(18px);
     -webkit-backdrop-filter: blur(18px);
-    border: 1px solid rgba(0, 212, 255, 0.18);
+    border: 1px solid rgba(0, 212, 255, 0.15);
     box-shadow: 0 4px 30px rgba(0,0,0,0.4), 0 0 40px rgba(0,212,255,0.04);
     margin-bottom: 0;
 }
