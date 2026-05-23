@@ -158,7 +158,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 0;
+    gap: 4px;
     margin-bottom: 18px;
     opacity: 0;
     animation: fadeInUp 1s ease 2.5s forwards;
@@ -169,13 +169,13 @@ nav {
     letter-spacing: 8px;
     line-height: 1.3;
     color: #fff;
-    padding: 14px 32px;
-    background: rgba(10, 22, 40, 0.6);
+    padding: 14px 36px;
+    background: rgba(10, 22, 40, 0.65);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
-    border: 1px solid rgba(0, 212, 255, 0.2);
-    box-shadow: 0 4px 30px rgba(0,0,0,0.5), 0 0 60px rgba(0,212,255,0.06);
-    clip-path: polygon(0 0, calc(100% - 70px) 0, 100% 100%, 0 100%);
+    border-top: 1px solid rgba(0,212,255,0.12);
+    border-left: 1px solid rgba(0,212,255,0.10);
+    border-bottom: 1px solid rgba(0,212,255,0.06);
 }
 .hero-box-right {
     font-size: 54px;
@@ -183,28 +183,27 @@ nav {
     letter-spacing: 8px;
     line-height: 1.3;
     color: #fff;
-    padding: 14px 32px;
-    background: rgba(255, 255, 255, 0.10);
+    padding: 14px 36px;
+    background: rgba(255, 255, 255, 0.08);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
-    border: 1px solid rgba(0, 212, 255, 0.15);
-    box-shadow: 0 4px 30px rgba(0,0,0,0.4), 0 0 60px rgba(0,212,255,0.06);
-    clip-path: polygon(70px 0, 100% 0, 100% 100%, 0 100%);
+    border-top: 1px solid rgba(0,212,255,0.12);
+    border-right: 1px solid rgba(0,212,255,0.10);
+    border-bottom: 1px solid rgba(0,212,255,0.06);
 }
 .hero-subtitle {
     font-size: 22px;
-    color: #fff;
+    color: rgba(255,255,255,0.90);
     letter-spacing: 5px;
     margin-bottom: 0;
     opacity: 0;
     animation: fadeInUp 1s ease 2.7s forwards;
     font-weight: 500;
-    padding: 10px 28px;
-    background: rgba(10, 22, 40, 0.55);
+    padding: 10px 32px;
+    background: rgba(10, 22, 40, 0.45);
     backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(16px);
-    border: 1px solid rgba(0, 212, 255, 0.18);
-    box-shadow: 0 0 30px rgba(0,212,255,0.08);
+    border: 1px solid rgba(0,212,255,0.12);
 }
 .hero-btn {
     padding: 15px 46px;
