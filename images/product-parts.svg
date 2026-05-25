@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="520" viewBox="0 0 800 520">
+  <rect width="800" height="520" fill="#080c14"/>
+  <defs>
+    <linearGradient id="glow2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00ff88" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#00d4ff" stop-opacity="0.05"/>
+    </linearGradient>
+    <pattern id="hex2" width="40" height="35" patternUnits="userSpaceOnUse">
+      <path d="M20 0L40 12V23L20 35L0 23V12z" fill="none" stroke="#00d4ff" stroke-opacity="0.05" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="520" fill="url(#hex2)"/>
+  <rect width="800" height="520" fill="url(#glow2)"/>
+  <!-- Plastic parts silhouettes - automotive interior -->
+  <rect x="180" y="200" width="120" height="80" rx="12" fill="#0a1628" stroke="#00d4ff" stroke-width="1.5" stroke-opacity="0.5"/>
+  <rect x="185" y="205" width="110" height="70" rx="8" fill="#00d4ff" fill-opacity="0.05"/>
+  <circle cx="220" cy="240" r="15" fill="none" stroke="#00d4ff" stroke-width="1" stroke-opacity="0.4"/>
+  <circle cx="220" cy="240" r="8" fill="#00d4ff" fill-opacity="0.15"/>
+
+  <!-- Electronic housing -->
+  <rect x="340" y="160" width="140" height="120" rx="6" fill="#0a1628" stroke="#00ff88" stroke-width="1.5" stroke-opacity="0.5"/>
+  <rect x="350" y="170" width="120" height="100" rx="4" fill="#00ff88" fill-opacity="0.04"/>
+  <rect x="360" y="185" width="80" height="12" rx="2" fill="#00ff88" fill-opacity="0.2"/>
+  <rect x="360" y="205" width="60" height="8" rx="2" fill="#00ff88" fill-opacity="0.15"/>
+  <rect x="360" y="220" width="70" height="8" rx="2" fill="#00ff88" fill-opacity="0.15"/>
+  <circle cx="450" cy="250" r="10" fill="#00ff88" fill-opacity="0.2" stroke="#00ff88" stroke-width="1"/>
+
+  <!-- Medical device part -->
+  <ellipse cx="560" cy="240" rx="70" ry="50" fill="#0a1628" stroke="#00d4ff" stroke-width="1.5" stroke-opacity="0.4"/>
+  <ellipse cx="560" cy="240" rx="50" ry="35" fill="none" stroke="#00d4ff" stroke-width="1" stroke-opacity="0.2"/>
+  <path d="M520 240 L600 240 M560 200 L560 280" stroke="#00d4ff" stroke-width="0.8" stroke-opacity="0.2"/>
+
+  <!-- Bottom row - consumer goods -->
+  <rect x="200" y="320" width="100" height="90" rx="8" fill="#0a1628" stroke="#00d4ff" stroke-width="1" stroke-opacity="0.35"/>
+  <rect x="340" y="330" width="130" height="80" rx="10" fill="#0a1628" stroke="#00ff88" stroke-width="1" stroke-opacity="0.35"/>
+  <rect x="510" y="310" width="110" height="100" rx="6" fill="#0a1628" stroke="#00d4ff" stroke-width="1" stroke-opacity="0.35"/>
+
+  <!-- Dimension lines -->
+  <path d="M160 180 L160 380 M160 180 L175 180 M160 380 L175 380" stroke="#00d4ff" stroke-width="0.8" stroke-opacity="0.3"/>
+  <path d="M640 200 L640 360 M625 200 L640 200 M625 360 L640 360" stroke="#00d4ff" stroke-width="0.8" stroke-opacity="0.3"/>
+
+  <text x="400" y="460" text-anchor="middle" fill="#00ff88" font-family="sans-serif" font-size="13" letter-spacing="4" opacity="0.6">INJECTION PARTS</text>
+  <text x="400" y="480" text-anchor="middle" fill="rgba(255,255,255,0.3)" font-family="sans-serif" font-size="10" letter-spacing="2">汽车 · 电子 · 医疗 · 日用</text>
+</svg>

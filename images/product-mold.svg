@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="520" viewBox="0 0 800 520">
+  <rect width="800" height="520" fill="#080c14"/>
+  <defs>
+    <linearGradient id="glow1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00d4ff" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#00d4ff" stop-opacity="0"/>
+    </linearGradient>
+    <pattern id="hex" width="40" height="35" patternUnits="userSpaceOnUse">
+      <path d="M20 0L40 12V23L20 35L0 23V12z" fill="none" stroke="#00d4ff" stroke-opacity="0.06" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="520" fill="url(#hex)"/>
+  <rect width="800" height="520" fill="url(#glow1)"/>
+  <!-- Mold block outline -->
+  <rect x="200" y="120" width="400" height="280" rx="8" fill="none" stroke="#00d4ff" stroke-width="2" stroke-opacity="0.5"/>
+  <rect x="220" y="140" width="360" height="240" rx="4" fill="#0a1628" stroke="#00d4ff" stroke-width="1" stroke-opacity="0.3"/>
+  <!-- Cavity lines -->
+  <path d="M280 160 L280 360 M340 160 L340 360 M400 160 L400 360 M460 160 L460 360 M520 160 L520 360" stroke="#00d4ff" stroke-width="1" stroke-opacity="0.2"/>
+  <path d="M240 200 L560 200 M240 260 L560 260 M240 320 L560 320" stroke="#00d4ff" stroke-width="1" stroke-opacity="0.2"/>
+  <!-- Ejector pins -->
+  <circle cx="295" cy="185" r="8" fill="#00d4ff" fill-opacity="0.3" stroke="#00d4ff" stroke-width="1.5"/>
+  <circle cx="355" cy="185" r="8" fill="#00d4ff" fill-opacity="0.3" stroke="#00d4ff" stroke-width="1.5"/>
+  <circle cx="415" cy="185" r="8" fill="#00d4ff" fill-opacity="0.3" stroke="#00d4ff" stroke-width="1.5"/>
+  <circle cx="475" cy="185" r="8" fill="#00d4ff" fill-opacity="0.3" stroke="#00d4ff" stroke-width="1.5"/>
+  <!-- Runner system -->
+  <path d="M580 260 L620 260 L620 320 L560 320" fill="none" stroke="#00ff88" stroke-width="2" stroke-opacity="0.5"/>
+  <circle cx="580" cy="260" r="6" fill="#00ff88" fill-opacity="0.4"/>
+  <!-- Labels -->
+  <text x="400" y="430" text-anchor="middle" fill="#00d4ff" font-family="sans-serif" font-size="13" letter-spacing="4" opacity="0.6">INJECTION MOLD</text>
+  <text x="400" y="455" text-anchor="middle" fill="rgba(255,255,255,0.3)" font-family="sans-serif" font-size="10" letter-spacing="2">高精度注塑模具 · CAD视图</text>
+</svg>
