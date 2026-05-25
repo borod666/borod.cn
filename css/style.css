@@ -514,10 +514,10 @@ footer {
         justify-content: center;
         padding: 0 20px;
     }
-    .hero-tag { font-size: 10px; letter-spacing: 4px; margin-bottom: 20px; }
-    .hero h1 { font-size: 22px; letter-spacing: 2px; line-height: 1.5; margin-bottom: 14px; }
-    .hero p { font-size: 12px; letter-spacing: 2px; margin-bottom: 40px; }
-    .hero-btn { padding: 13px 36px; font-size: 12px; }
+    .hero-tag { font-size: 9px; letter-spacing: 3px; margin-bottom: 16px; }
+    .hero h1 { font-size: 18px; letter-spacing: 1px; line-height: 1.4; margin-bottom: 12px; white-space: nowrap; }
+    .hero p { font-size: 11px; letter-spacing: 1px; margin-bottom: 36px; }
+    .hero-btn { padding: 12px 30px; font-size: 11px; }
     .about-stats { flex-direction: column; gap: 30px; }
     .contact-grid { grid-template-columns: 1fr; }
     .products-grid { grid-template-columns: 1fr; }
