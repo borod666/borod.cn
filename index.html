@@ -3,40 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>成都博睿模具有限公司 - BOROD</title>
-    <meta name="description" content="成都博睿模具有限公司是一家专业从事高精密塑料模具设计、开发与制造的现代化企业。">
+    <title>成都博睿模具有限公司 - BOROD | 精密模具·注塑制造</title>
+    <meta name="description" content="成都博睿模具有限公司，20年精密模具设计制造与注塑成型经验。汽车零部件、电子电器、医疗器械领域专业供应商。">
+    <meta name="keywords" content="注塑模具,精密模具,注塑成型,成都模具,塑料模具,博睿模具,BOROD">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔧</text></svg>">
 </head>
 <body>
     <!-- Loading -->
     <div id="loader">
         <div class="loader-logo">BOR<span>O</span>D</div>
         <div class="loader-bar"></div>
-        <div class="loader-text">Loading...</div>
+        <div class="loader-text">精密制造 · 品质之选</div>
     </div>
 
     <!-- Navigation -->
-    <nav>
+    <nav id="navbar">
         <div class="logo">
             <div class="logo-borod">BOR<span>O</span>D</div>
             <div class="logo-text">博睿模塑</div>
         </div>
-        <ul class="nav-links">
-            <li><a href="#about" class="active">关于我们</a></li>
+        <button class="nav-toggle" id="navToggle" aria-label="菜单">
+            <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#about">关于我们</a></li>
+            <li><a href="#advantages">核心优势</a></li>
+            <li><a href="#products">产品中心</a></li>
             <li><a href="#services">服务项目</a></li>
             <li><a href="#cases">案例展示</a></li>
+            <li><a href="#equipment">生产设备</a></li>
             <li><a href="news.html">新闻动态</a></li>
             <li><a href="#contact">联系我们</a></li>
         </ul>
     </nav>
 
     <!-- Hero -->
-    <section class="hero">
+    <section class="hero" id="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-particles" id="particles"></div>
         <div class="hero-text">
+            <div class="hero-badge">EST. 2004 · 专注精密制造20年</div>
             <div class="hero-title-split">
                 <div class="hero-box-full">成都博睿模具有限公司</div>
             </div>
-            <p class="hero-subtitle">精密模具制造/注塑服务商</p>
+            <p class="hero-subtitle">精密模具设计 · 注塑成型制造 · 一站式解决方案</p>
+            <div class="hero-btns">
+                <a href="#products" class="hero-btn primary">产品中心</a>
+                <a href="#contact" class="hero-btn outline">联系我们</a>
+            </div>
+        </div>
+        <div class="hero-scroll-indicator">
+            <div class="scroll-line"></div>
+            <span>向下滚动</span>
         </div>
     </section>
 
@@ -47,24 +69,93 @@
             <p>About Borod</p>
             <div class="line"></div>
         </div>
-        <div class="about-content fade-in">
-            <p>成都博睿模具有限公司是一家专业从事高精密塑料模具设计、开发与制造的现代化企业。深耕行业二十余年，我们专注于为客户提供从产品评估、模具设计到批量生产的一站式精密制造解决方案。</p>
-            <br>
-            <p>产品覆盖汽车零部件、电子电器、医疗器械、日用消费品等多个领域。我们始终坚持「精度优先、客户至上」的理念，以可靠的产品质量和完善的售后服务赢得市场信赖。</p>
+        <div class="about-wrapper fade-in">
+            <div class="about-image">
+                <img src="images/about.jpg" alt="博睿模具团队" loading="lazy">
+                <div class="about-image-overlay">
+                    <span>20年匠心沉淀</span>
+                </div>
+            </div>
+            <div class="about-text">
+                <p>成都博睿模具有限公司是一家专业从事高精密塑料模具设计、开发与制造的现代化企业。<strong>深耕行业二十余年</strong>，我们专注于为客户提供从产品评估、模具设计到批量生产的一站式精密制造解决方案。</p>
+                <br>
+                <p>产品覆盖<strong>汽车零部件、电子电器、医疗器械、日用消费品</strong>等多个领域。我们始终坚持「精度优先、客户至上」的理念，以可靠的产品质量和完善的售后服务赢得市场信赖。</p>
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <span class="num" data-count="20">0</span>
+                        <span class="label">年行业经验</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="num" data-count="500">0</span>
+                        <span class="label">+ 服务客户</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="num" data-count="3000">0</span>
+                        <span class="label">+ 套模具产出</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="num" data-count="98">0</span>
+                        <span class="label">% 客户满意度</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Advantages -->
+    <section id="advantages">
+        <div class="section-title fade-in">
+            <h2>核心优势</h2>
+            <p>Why Choose Borod</p>
+            <div class="line"></div>
+        </div>
+        <div class="advantages-grid">
+            <div class="advantage-card fade-in">
+                <div class="advantage-icon">
+                    <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M32 4L4 20v24l28 16 28-16V20L32 4z" stroke="currentColor" stroke-width="2"/><path d="M32 28v20M20 20l24 14" stroke="currentColor" stroke-width="2"/><circle cx="32" cy="32" r="4" fill="currentColor"/></svg>
+                </div>
+                <h3>精密设计</h3>
+                <p>采用先进CAD/CAM/CAE技术，Moldflow模流分析，确保模具结构合理、成型质量稳定。</p>
+                <div class="advantage-num">01</div>
+            </div>
+            <div class="advantage-card fade-in">
+                <div class="advantage-icon">
+                    <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="8" y="24" width="48" height="28" rx="2" stroke="currentColor" stroke-width="2"/><path d="M16 24V16a16 16 0 0132 0v8" stroke="currentColor" stroke-width="2"/><circle cx="32" cy="38" r="6" stroke="currentColor" stroke-width="2"/><path d="M32 44v4" stroke="currentColor" stroke-width="2"/></svg>
+                </div>
+                <h3>品质管控</h3>
+                <p>ISO质量管理体系，三坐标测量仪全程品控，每套模具出厂前100%试模验证。</p>
+                <div class="advantage-num">02</div>
+            </div>
+            <div class="advantage-card fade-in">
+                <div class="advantage-icon">
+                    <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="32" cy="32" r="24" stroke="currentColor" stroke-width="2"/><path d="M32 16v16l12 8" stroke="currentColor" stroke-width="2"/><path d="M20 8l4 8M44 8l-4 8" stroke="currentColor" stroke-width="2"/></svg>
+                </div>
+                <h3>快速交付</h3>
+                <p>标准化项目管理流程，模具设计周期缩短30%，急单可加急处理，准时交付率超95%。</p>
+                <div class="advantage-num">03</div>
+            </div>
+            <div class="advantage-card fade-in">
+                <div class="advantage-icon">
+                    <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M32 8a24 24 0 010 48M32 8a24 24 0 000 48" stroke="currentColor" stroke-width="2"/><path d="M8 32h48M12 20h40M12 44h40" stroke="currentColor" stroke-width="1.5"/><circle cx="32" cy="32" r="8" stroke="currentColor" stroke-width="2"/></svg>
+                </div>
+                <h3>全链服务</h3>
+                <p>从产品评估→模具设计→加工制造→试模验证→批量注塑，一站式全链条服务。</p>
+                <div class="advantage-num">04</div>
+            </div>
         </div>
     </section>
 
     <!-- Products -->
     <section id="products">
         <div class="section-title fade-in">
-            <h2>产品板块</h2>
+            <h2>产品中心</h2>
             <p>Products</p>
             <div class="line"></div>
         </div>
         <div class="products-grid">
             <div class="product-card fade-in">
                 <div class="product-img">
-                    <img src="images/product-mold.svg" alt="注塑模具" style="width:100%;height:100%;object-fit:cover;">
+                    <img src="images/product-mold.jpg" alt="注塑模具" loading="lazy">
                 </div>
                 <div class="product-content">
                     <h3>注塑模具</h3>
@@ -78,7 +169,7 @@
             </div>
             <div class="product-card fade-in">
                 <div class="product-img">
-                    <img src="images/product-parts.svg" alt="注塑零部件" style="width:100%;height:100%;object-fit:cover;">
+                    <img src="images/product-parts.jpg" alt="注塑零部件" loading="lazy">
                 </div>
                 <div class="product-content">
                     <h3>注塑零部件</h3>
@@ -102,24 +193,113 @@
         </div>
         <div class="services-grid">
             <div class="service-card fade-in">
-                <div class="service-icon">🔧</div>
+                <div class="service-icon">
+                    <svg viewBox="0 0 48 48" fill="none"><path d="M24 4L6 14v20l18 10 18-10V14L24 4z" stroke="currentColor" stroke-width="1.5"/><path d="M24 24v16M14 14l20 12" stroke="currentColor" stroke-width="1.5"/><circle cx="24" cy="24" r="3" fill="currentColor"/></svg>
+                </div>
                 <h3>模具设计与制造</h3>
                 <p>专业团队提供从产品评估到模具设计的全程服务，采用先进CAD/CAM技术，确保模具精度与效率。</p>
             </div>
             <div class="service-card fade-in">
-                <div class="service-icon">🏭</div>
+                <div class="service-icon">
+                    <svg viewBox="0 0 48 48" fill="none"><rect x="6" y="18" width="36" height="22" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M12 18V12a12 12 0 0124 0v6" stroke="currentColor" stroke-width="1.5"/><circle cx="24" cy="29" r="5" stroke="currentColor" stroke-width="1.5"/></svg>
+                </div>
                 <h3>注塑成型加工</h3>
-                <p>配备多台精密注塑机，可完成从试模到批量生产的全流程加工，满足多样化生产需求。</p>
+                <p>配备多台精密注塑机（80T-1600T），可完成从试模到批量生产的全流程加工，满足多样化生产需求。</p>
             </div>
             <div class="service-card fade-in">
-                <div class="service-icon">🔄</div>
+                <div class="service-icon">
+                    <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="18" stroke="currentColor" stroke-width="1.5"/><path d="M24 10v14l10 6" stroke="currentColor" stroke-width="1.5"/><path d="M16 6l4 8M32 6l-4 8" stroke="currentColor" stroke-width="1.5"/></svg>
+                </div>
                 <h3>模具维修与保养</h3>
-                <p>提供快速响应的模具维护服务，延长模具使用寿命，降低客户生产成本。</p>
+                <p>提供快速响应的模具维护服务，定期保养计划，延长模具使用寿命，降低客户生产成本。</p>
             </div>
             <div class="service-card fade-in">
-                <div class="service-icon">💡</div>
+                <div class="service-icon">
+                    <svg viewBox="0 0 48 48" fill="none"><path d="M24 4l6 12h14l-11 8 4 14-13-9-13 9 4-14L4 16h14l6-12z" stroke="currentColor" stroke-width="1.5"/></svg>
+                </div>
                 <h3>产品优化建议</h3>
-                <p>基于丰富的制造经验，为客户提供产品结构优化和材料选择的专业建议。</p>
+                <p>基于20年制造经验，为客户提供产品结构优化、材料选择和成本控制的专业建议。</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cases -->
+    <section id="cases">
+        <div class="section-title fade-in">
+            <h2>案例展示</h2>
+            <p>Case Studies</p>
+            <div class="line"></div>
+        </div>
+        <div class="cases-grid">
+            <a href="article/case-01.html" class="case-card fade-in" style="background-image:url('images/gears.jpg')">
+                <div class="case-overlay"></div>
+                <div class="case-info">
+                    <h3>汽车内饰件模具</h3>
+                    <p>为某知名车企设计制造的汽车门板注塑模具，采用热流道系统，一模两腔，产品精度±0.05mm。</p>
+                    <span class="case-tag">汽车零部件</span>
+                </div>
+            </a>
+            <a href="#" class="case-card fade-in" style="background-image:url('images/cnc.jpg')">
+                <div class="case-overlay"></div>
+                <div class="case-info">
+                    <h3>医疗器械精密模具</h3>
+                    <p>医疗级精密注塑模具，洁净车间生产，符合ISO 13485标准，产品用于体外诊断设备。</p>
+                    <span class="case-tag">医疗器械</span>
+                </div>
+            </a>
+            <a href="#" class="case-card fade-in" style="background-image:url('images/factory.jpg')">
+                <div class="case-overlay"></div>
+                <div class="case-info">
+                    <h3>电子连接器模具</h3>
+                    <p>高精密多腔模具，32腔设计，周期时间8秒，年产量超500万件，服务于头部电子企业。</p>
+                    <span class="case-tag">电子电器</span>
+                </div>
+            </a>
+            <a href="#" class="case-card fade-in" style="background-image:url('images/mold-detail.jpg')">
+                <div class="case-overlay"></div>
+                <div class="case-info">
+                    <h3>日用品批量注塑</h3>
+                    <p>日用消费品注塑项目，从打样到量产仅用15天，月产能50万件，成本优化20%。</p>
+                    <span class="case-tag">日用消费品</span>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- Equipment -->
+    <section id="equipment">
+        <div class="section-title fade-in">
+            <h2>生产设备</h2>
+            <p>Equipment</p>
+            <div class="line"></div>
+        </div>
+        <div class="equipment-grid">
+            <div class="equipment-card fade-in">
+                <div class="equipment-img">
+                    <img src="images/injection-machine.jpg" alt="注塑机" loading="lazy">
+                </div>
+                <div class="equipment-info">
+                    <h3>精密注塑机</h3>
+                    <p>海天、震雄等品牌注塑机，锁模力80T-1600T，覆盖微精密到大型结构件生产。</p>
+                </div>
+            </div>
+            <div class="equipment-card fade-in">
+                <div class="equipment-img">
+                    <img src="images/cnc.jpg" alt="CNC加工中心" loading="lazy">
+                </div>
+                <div class="equipment-info">
+                    <h3>CNC加工中心</h3>
+                    <p>高精度CNC铣床、慢走丝线切割、电火花机等模具加工设备，精度达±0.01mm。</p>
+                </div>
+            </div>
+            <div class="equipment-card fade-in">
+                <div class="equipment-img">
+                    <img src="images/quality.jpg" alt="检测设备" loading="lazy">
+                </div>
+                <div class="equipment-info">
+                    <h3>品质检测设备</h3>
+                    <p>三坐标测量仪、投影仪、硬度计等全套检测设备，确保每件产品符合规格要求。</p>
+                </div>
             </div>
         </div>
     </section>
@@ -150,17 +330,37 @@
                     <span>www.borod.cn</span>
                 </div>
             </div>
+            <div class="contact-map">
+                <iframe src="https://uri.amap.com/marker?position=104.2631,30.5728&name=成都博睿模具有限公司&src=bored.cn" width="100%" height="320" style="border:0;border-radius:8px;" allowfullscreen loading="lazy"></iframe>
+            </div>
         </div>
     </section>
 
     <!-- Footer -->
     <footer>
-        <p>© 2026 成都博睿模具有限公司 BOROD Mould Co., Ltd.</p>
-        <p style="margin-top:8px;font-size:11px;letter-spacing:1px;">蜀ICP备19018672号-1</p>
+        <div class="footer-main">
+            <div class="footer-brand">
+                <div class="logo-borod" style="font-size:28px;letter-spacing:10px;">BOR<span>O</span>D</div>
+                <p class="footer-tagline">精密模具 · 注塑制造 · 值得信赖</p>
+            </div>
+            <div class="footer-links">
+                <a href="#about">关于我们</a>
+                <a href="#products">产品中心</a>
+                <a href="#services">服务项目</a>
+                <a href="#contact">联系我们</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 成都博睿模具有限公司 BOROD Mould Co., Ltd.</p>
+            <p style="margin-top:6px;font-size:11px;letter-spacing:1px;">蜀ICP备19018672号-1</p>
+        </div>
     </footer>
+
+    <!-- Back to Top -->
+    <button id="backToTop" class="back-to-top" aria-label="回到顶部">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+    </button>
 
     <script src="js/main.js"></script>
 </body>
 </html>
-
-<!-- redeploy trigger -->

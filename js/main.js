@@ -1,5 +1,5 @@
 /**
- * BOROD Website - Main JS
+ * BOROD Website V2 - Main JS
  */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -14,19 +14,62 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    /* ---- Mobile Nav Toggle ---- */
+    const navToggle = document.getElementById('navToggle');
+    const navLinks = document.getElementById('navLinks');
+    if (navToggle && navLinks) {
+        navToggle.addEventListener('click', () => {
+            navToggle.classList.toggle('active');
+            navLinks.classList.toggle('open');
+        });
+        navLinks.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                navToggle.classList.remove('active');
+                navLinks.classList.remove('open');
+            });
+        });
+    }
+
+    /* ---- Navbar scroll effect ---- */
+    const navbar = document.getElementById('navbar');
+    if (navbar) {
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+    }
+
+    /* ---- Hero Particles ---- */
+    const particlesContainer = document.getElementById('particles');
+    if (particlesContainer) {
+        const particleCount = 30;
+        for (let i = 0; i < particleCount; i++) {
+            const particle = document.createElement('div');
+            particle.className = 'particle';
+            particle.style.left = Math.random() * 100 + '%';
+            particle.style.animationDuration = (8 + Math.random() * 12) + 's';
+            particle.style.animationDelay = Math.random() * 8 + 's';
+            particle.style.transform = `scale(${0.5 + Math.random() * 1.5})`;
+            particlesContainer.appendChild(particle);
+        }
+    }
+
     /* ---- Active Nav Link ---- */
     const sections = document.querySelectorAll('section[id]');
-    const navLinks = document.querySelectorAll('.nav-links a');
+    const navLinkEls = document.querySelectorAll('.nav-links a');
 
     function updateActiveNav() {
         let current = '';
         sections.forEach(section => {
-            const sectionTop = section.offsetTop - 120;
+            const sectionTop = section.offsetTop - 150;
             if (window.scrollY >= sectionTop) {
                 current = section.getAttribute('id');
             }
         });
-        navLinks.forEach(link => {
+        navLinkEls.forEach(link => {
             link.classList.remove('active');
             if (link.getAttribute('href') === '#' + current) {
                 link.classList.add('active');
@@ -47,6 +90,7 @@ document.addEventListener('DOMContentLoaded', () => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.classList.add('visible');
+                observer.unobserve(entry.target);
             }
         });
     }, observerOptions);
@@ -58,24 +102,15 @@ document.addEventListener('DOMContentLoaded', () => {
     /* ---- Smooth Scroll ---- */
     document.querySelectorAll('a[href^="#"]').forEach(link => {
         link.addEventListener('click', (e) => {
-            e.preventDefault();
-            const target = document.querySelector(link.getAttribute('href'));
+            const targetId = link.getAttribute('href');
+            if (targetId === '#' || targetId.length < 2) return;
+            const target = document.querySelector(targetId);
             if (target) {
+                e.preventDefault();
                 target.scrollIntoView({ behavior: 'smooth', block: 'start' });
             }
         });
     });
-
-    /* ---- Hero Button ---- */
-    const heroBtn = document.querySelector('.hero-btn');
-    if (heroBtn) {
-        heroBtn.addEventListener('click', () => {
-            const target = document.getElementById('about');
-            if (target) {
-                target.scrollIntoView({ behavior: 'smooth' });
-            }
-        });
-    }
 
     /* ---- Stats Counter Animation ---- */
     function animateCounters() {
@@ -107,17 +142,22 @@ document.addEventListener('DOMContentLoaded', () => {
                 animateCounters();
                 statsObserver.disconnect();
             }
-        }, { threshold: 0.5 });
+        }, { threshold: 0.4 });
         statsObserver.observe(statsSection);
     }
-});
-// Language Switcher
-document.querySelectorAll('.lang-switch a').forEach(link => {
-    link.addEventListener('click', () => {
-        const isEn = link.classList.contains('lang-en');
-        document.querySelectorAll('.lang-switch a').forEach(a => a.classList.remove('active'));
-        link.classList.add('active');
-        document.querySelectorAll('.en').forEach(el => el.style.display = isEn ? '' : 'none');
-        document.querySelectorAll('.zh').forEach(el => el.style.display = isEn ? 'none' : '');
-    });
+
+    /* ---- Back to Top ---- */
+    const backToTop = document.getElementById('backToTop');
+    if (backToTop) {
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 600) {
+                backToTop.classList.add('visible');
+            } else {
+                backToTop.classList.remove('visible');
+            }
+        });
+        backToTop.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    }
 });
