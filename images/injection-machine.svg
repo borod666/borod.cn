@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bgIM" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a1628"/>
+      <stop offset="100%" stop-color="#1a3050"/>
+    </linearGradient>
+    <linearGradient id="machineBody" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#9ab4ce"/>
+      <stop offset="40%" stop-color="#5a7592"/>
+      <stop offset="100%" stop-color="#3d5468"/>
+    </linearGradient>
+    <linearGradient id="machineDark" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#4a5e74"/>
+      <stop offset="100%" stop-color="#1f3346"/>
+    </linearGradient>
+  </defs>
+  
+  <rect width="800" height="600" fill="url(#bgIM)"/>
+  
+  <!-- 网格底图 -->
+  <g opacity="0.1">
+    <pattern id="gridIM" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#00d4ff" stroke-width="0.5"/>
+    </pattern>
+    <rect width="800" height="600" fill="url(#gridIM)"/>
+  </g>
+  
+  <!-- 注塑机完整结构图 -->
+  <g transform="translate(180, 100)">
+    
+    <!-- 料斗（顶部锥形） -->
+    <path d="M 60 0 L 90 -50 L 200 -50 L 230 0 Z" 
+          fill="url(#machineDark)" stroke="#00d4ff" stroke-width="1"/>
+    <ellipse cx="145" cy="-50" rx="55" ry="8" fill="#3d5468" stroke="#00d4ff" stroke-width="0.6"/>
+    
+    <!-- 螺杆筒（料筒） -->
+    <rect x="100" y="0" width="90" height="40" fill="url(#machineDark)" stroke="#00d4ff" stroke-width="0.8"/>
+    <!-- 螺杆内部示意 -->
+    <line x1="110" y1="20" x2="190" y2="20" stroke="#00ff88" stroke-width="1" opacity="0.6"/>
+    <line x1="115" y1="10" x2="195" y2="10" stroke="#00ff88" stroke-width="0.4" opacity="0.5"/>
+    <line x1="115" y1="30" x2="195" y2="30" stroke="#00ff88" stroke-width="0.4" opacity="0.5"/>
+    
+    <!-- 主机身主体 -->
+    <rect x="40" y="40" width="320" height="380" fill="url(#machineBody)" stroke="#00d4ff" stroke-width="1.2"/>
+    
+    <!-- 控制面板 -->
+    <rect x="60" y="60" width="140" height="100" fill="#0a1628" stroke="#00d4ff" stroke-width="1"/>
+    <!-- 屏幕 -->
+    <rect x="72" y="72" width="116" height="50" fill="#001428" stroke="#00ff88" stroke-width="0.5"/>
+    <line x1="80" y1="84" x2="180" y2="84" stroke="#00ff88" stroke-width="0.4"/>
+    <line x1="80" y1="94" x2="170" y2="94" stroke="#00ff88" stroke-width="0.4"/>
+    <line x1="80" y1="104" x2="180" y2="104" stroke="#00ff88" stroke-width="0.4"/>
+    <line x1="80" y1="114" x2="150" y2="114" stroke="#00ff88" stroke-width="0.4"/>
+    <!-- 按钮 -->
+    <circle cx="80" cy="140" r="6" fill="#00d4ff" stroke="#00d4ff" stroke-width="0.3"/>
+    <circle cx="100" cy="140" r="6" fill="#ff3c3c" stroke="#00d4ff" stroke-width="0.3"/>
+    <circle cx="120" cy="140" r="6" fill="#00ff88" stroke="#00d4ff" stroke-width="0.3"/>
+    <circle cx="140" cy="140" r="6" fill="#3d5468" stroke="#00d4ff" stroke-width="0.3"/>
+    <circle cx="160" cy="140" r="6" fill="#3d5468" stroke="#00d4ff" stroke-width="0.3"/>
+    <circle cx="180" cy="140" r="6" fill="#3d5468" stroke="#00d4ff" stroke-width="0.3"/>
+    
+    <!-- 锁模区 -->
+    <rect x="60" y="180" width="280" height="220" fill="url(#machineDark)" stroke="#00d4ff" stroke-width="0.8" opacity="0.7"/>
+    <!-- 动模板 -->
+    <rect x="100" y="200" width="220" height="50" fill="#5a7592" stroke="#00d4ff" stroke-width="0.8"/>
+    <!-- 定模板 -->
+    <rect x="100" y="320" width="220" height="50" fill="#5a7592" stroke="#00d4ff" stroke-width="0.8"/>
+    <!-- 模具（中间） -->
+    <rect x="130" y="250" width="160" height="70" fill="#3d5468" stroke="#00ff88" stroke-width="1.2"/>
+    <text x="210" y="290" text-anchor="middle" fill="#00ff88" font-family="monospace" font-size="10" letter-spacing="2">MOLD</text>
+    <!-- 拉杆（4根） -->
+    <rect x="70" y="200" width="6" height="170" fill="#3d5468" stroke="#00d4ff" stroke-width="0.4"/>
+    <rect x="130" y="200" width="6" height="170" fill="#3d5468" stroke="#00d4ff" stroke-width="0.4"/>
+    <rect x="280" y="200" width="6" height="170" fill="#3d5468" stroke="#00d4ff" stroke-width="0.4"/>
+    <rect x="324" y="200" width="6" height="170" fill="#3d5468" stroke="#00d4ff" stroke-width="0.4"/>
+    
+    <!-- 安全门 -->
+    <rect x="60" y="380" width="280" height="20" fill="#1f3346" stroke="#00d4ff" stroke-width="0.5"/>
+    <text x="200" y="395" text-anchor="middle" fill="#00d4ff" font-family="monospace" font-size="9">SAFETY DOOR</text>
+    
+    <!-- 底座 -->
+    <rect x="20" y="420" width="360" height="30" fill="url(#machineDark)" stroke="#00d4ff" stroke-width="0.8"/>
+    <rect x="40" y="450" width="40" height="20" fill="#3d5468" stroke="#00d4ff" stroke-width="0.4"/>
+    <rect x="120" y="450" width="40" height="20" fill="#3d5468" stroke="#00d4ff" stroke-width="0.4"/>
+    <rect x="200" y="450" width="40" height="20" fill="#3d5468" stroke="#00d4ff" stroke-width="0.4"/>
+    <rect x="280" y="450" width="40" height="20" fill="#3d5468" stroke="#00d4ff" stroke-width="0.4"/>
+  </g>
+  
+  <!-- 标注线 -->
+  <g stroke="#00d4ff" stroke-width="0.5" fill="none" opacity="0.6">
+    <line x1="280" y1="50" x2="280" y2="80"/>
+    <line x1="280" y1="80" x2="350" y2="80"/>
+  </g>
+  <text x="360" y="76" fill="#00d4ff" font-family="monospace" font-size="9" letter-spacing="1">HOPPER</text>
+  
+  <g stroke="#00ff88" stroke-width="0.5" fill="none" opacity="0.6">
+    <line x1="500" y1="320" x2="600" y2="320"/>
+  </g>
+  <text x="610" y="316" fill="#00ff88" font-family="monospace" font-size="9" letter-spacing="1">MOLD AREA</text>
+  
+  <!-- 角标 -->
+  <g transform="translate(40, 570)" fill="#00d4ff" opacity="0.6">
+    <text font-family="monospace" font-size="9" letter-spacing="2">INJECTION MOLDING MACHINE · 80T-1600T · BOROD MOULD</text>
+  </g>
+</svg>

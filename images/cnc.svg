@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bgCNC" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a1628"/>
+      <stop offset="100%" stop-color="#1a3050"/>
+    </linearGradient>
+    <linearGradient id="cncBody" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#7a8fa6"/>
+      <stop offset="50%" stop-color="#3d5468"/>
+      <stop offset="100%" stop-color="#1f3346"/>
+    </linearGradient>
+    <linearGradient id="cncLight" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#5a7592"/>
+      <stop offset="100%" stop-color="#9ab4ce"/>
+    </linearGradient>
+  </defs>
+  
+  <rect width="800" height="600" fill="url(#bgCNC)"/>
+  
+  <!-- 网格 -->
+  <g opacity="0.1">
+    <pattern id="gridCNC" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#00d4ff" stroke-width="0.5"/>
+    </pattern>
+    <rect width="800" height="600" fill="url(#gridCNC)"/>
+  </g>
+  
+  <!-- CNC加工中心 -->
+  <g transform="translate(150, 80)">
+    
+    <!-- 机床主体外壳（封闭外罩） -->
+    <path d="M 0 60 L 60 0 L 440 0 L 500 60 L 500 400 L 0 400 Z" 
+          fill="url(#cncBody)" stroke="#00d4ff" stroke-width="1.2"/>
+    
+    <!-- 顶部斜面 -->
+    <path d="M 60 0 L 440 0 L 500 60 L 0 60 Z" fill="url(#cncLight)" stroke="#00d4ff" stroke-width="1" opacity="0.6"/>
+    
+    <!-- 观察窗（透明玻璃效果） -->
+    <rect x="80" y="120" width="180" height="220" fill="#0a1628" stroke="#00d4ff" stroke-width="0.8" opacity="0.85"/>
+    <line x1="80" y1="120" x2="260" y2="120" stroke="#00ff88" stroke-width="0.4"/>
+    <line x1="80" y1="340" x2="260" y2="340" stroke="#00ff88" stroke-width="0.4"/>
+    <line x1="80" y1="120" x2="80" y2="340" stroke="#00ff88" stroke-width="0.4"/>
+    <line x1="260" y1="120" x2="260" y2="340" stroke="#00ff88" stroke-width="0.4"/>
+    
+    <!-- 内部：主轴（Z轴） -->
+    <g transform="translate(170, 200)">
+      <!-- 主轴箱 -->
+      <rect x="-30" y="-20" width="60" height="80" fill="#3d5468" stroke="#00d4ff" stroke-width="0.8"/>
+      <!-- 主轴电机 -->
+      <rect x="-20" y="-30" width="40" height="20" fill="#1f3346" stroke="#00d4ff" stroke-width="0.6"/>
+      <!-- 主轴杆 -->
+      <rect x="-8" y="60" width="16" height="80" fill="#5a7592" stroke="#00d4ff" stroke-width="0.6"/>
+      <!-- 刀具 -->
+      <path d="M -4 140 L 4 140 L 3 180 L 5 200 L -5 200 L -3 180 Z" 
+            fill="#7a8fa6" stroke="#00ff88" stroke-width="1"/>
+    </g>
+    
+    <!-- 内部：工作台 -->
+    <g transform="translate(280, 240)">
+      <!-- 工作台X轴 -->
+      <rect x="0" y="0" width="160" height="40" fill="#3d5468" stroke="#00d4ff" stroke-width="0.8"/>
+      <!-- Y轴滑板 -->
+      <rect x="40" y="0" width="80" height="40" fill="#5a7592" stroke="#00d4ff" stroke-width="0.6"/>
+      <!-- 工件（被加工零件） -->
+      <rect x="50" y="-30" width="60" height="30" fill="#9ab4ce" stroke="#00ff88" stroke-width="1"/>
+      <text x="80" y="-12" text-anchor="middle" fill="#00ff88" font-family="monospace" font-size="9">WORKPIECE</text>
+      <!-- 夹具 -->
+      <rect x="45" y="40" width="10" height="20" fill="#1f3346" stroke="#00d4ff" stroke-width="0.4"/>
+      <rect x="105" y="40" width="10" height="20" fill="#1f3346" stroke="#00d4ff" stroke-width="0.4"/>
+    </g>
+    
+    <!-- 控制面板（右侧外置） -->
+    <rect x="300" y="120" width="160" height="80" fill="#0a1628" stroke="#00d4ff" stroke-width="1"/>
+    <rect x="312" y="132" width="136" height="40" fill="#001428" stroke="#00ff88" stroke-width="0.5"/>
+    <line x1="320" y1="144" x2="440" y2="144" stroke="#00ff88" stroke-width="0.4"/>
+    <line x1="320" y1="154" x2="430" y2="154" stroke="#00ff88" stroke-width="0.4"/>
+    <line x1="320" y1="164" x2="440" y2="164" stroke="#00ff88" stroke-width="0.4"/>
+    <!-- 控制按钮 -->
+    <circle cx="320" cy="186" r="5" fill="#00d4ff" stroke="#00d4ff" stroke-width="0.3"/>
+    <circle cx="340" cy="186" r="5" fill="#ff3c3c" stroke="#00d4ff" stroke-width="0.3"/>
+    <circle cx="360" cy="186" r="5" fill="#00ff88" stroke="#00d4ff" stroke-width="0.3"/>
+    <circle cx="380" cy="186" r="5" fill="#3d5468" stroke="#00d4ff" stroke-width="0.3"/>
+    <rect x="400" y="180" width="50" height="12" fill="#1f3346" stroke="#00d4ff" stroke-width="0.4"/>
+    
+    <!-- 操作手柄 -->
+    <line x1="430" y1="186" x2="450" y2="186" stroke="#00d4ff" stroke-width="2"/>
+    <circle cx="450" cy="186" r="6" fill="#3d5468" stroke="#00d4ff" stroke-width="0.5"/>
+    
+    <!-- 底座 -->
+    <rect x="-20" y="400" width="540" height="40" fill="url(#cncBody)" stroke="#00d4ff" stroke-width="1"/>
+    <rect x="0" y="440" width="50" height="20" fill="#3d5468" stroke="#00d4ff" stroke-width="0.4"/>
+    <rect x="100" y="440" width="50" height="20" fill="#3d5468" stroke="#00d4ff" stroke-width="0.4"/>
+    <rect x="200" y="440" width="50" height="20" fill="#3d5468" stroke="#00d4ff" stroke-width="0.4"/>
+    <rect x="300" y="440" width="50" height="20" fill="#3d5468" stroke="#00d4ff" stroke-width="0.4"/>
+    <rect x="400" y="440" width="50" height="20" fill="#3d5468" stroke="#00d4ff" stroke-width="0.4"/>
+  </g>
+  
+  <!-- 标注线 -->
+  <g stroke="#00d4ff" stroke-width="0.5" fill="none" opacity="0.6">
+    <line x1="320" y1="280" x2="120" y2="280"/>
+  </g>
+  <text x="60" y="284" fill="#00d4ff" font-family="monospace" font-size="9" letter-spacing="1">Z-AXIS</text>
+  
+  <g stroke="#00ff88" stroke-width="0.5" fill="none" opacity="0.6">
+    <line x1="430" y1="320" x2="700" y2="320"/>
+  </g>
+  <text x="640" y="316" fill="#00ff88" font-family="monospace" font-size="9" letter-spacing="1">WORK TABLE</text>
+  
+  <!-- 角标 -->
+  <g transform="translate(40, 570)" fill="#00d4ff" opacity="0.6">
+    <text font-family="monospace" font-size="9" letter-spacing="2">CNC MACHINING CENTER · ±0.01mm · BOROD MOULD</text>
+  </g>
+</svg>

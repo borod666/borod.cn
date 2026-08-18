@@ -9,7 +9,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔧</text></svg>">
 </head>
 <body>
@@ -43,6 +42,9 @@
 
     <!-- Hero -->
     <section class="hero" id="hero">
+        <div class="hero-bg">
+            <img src="images/hero-bg.svg" alt="">
+        </div>
         <div class="hero-overlay"></div>
         <div class="hero-particles" id="particles"></div>
         <div class="hero-text">
@@ -71,7 +73,7 @@
         </div>
         <div class="about-wrapper fade-in">
             <div class="about-image">
-                <img src="images/about.jpg" alt="博睿模具团队" loading="lazy">
+                <img src="images/about.svg" alt="博睿模具工程团队">
                 <div class="about-image-overlay">
                     <span>20年匠心沉淀</span>
                 </div>
@@ -155,7 +157,7 @@
         <div class="products-grid">
             <div class="product-card fade-in">
                 <div class="product-img">
-                    <img src="images/product-mold.jpg" alt="注塑模具" loading="lazy">
+                    <img src="images/product-mold.svg" alt="注塑模具">
                 </div>
                 <div class="product-content">
                     <h3>注塑模具</h3>
@@ -169,7 +171,7 @@
             </div>
             <div class="product-card fade-in">
                 <div class="product-img">
-                    <img src="images/product-parts.jpg" alt="注塑零部件" loading="lazy">
+                    <img src="images/product-parts.svg" alt="注塑零部件">
                 </div>
                 <div class="product-content">
                     <h3>注塑零部件</h3>
@@ -231,7 +233,7 @@
             <div class="line"></div>
         </div>
         <div class="cases-grid">
-            <a href="article/case-01.html" class="case-card fade-in" style="background-image:url('images/gears.jpg')">
+            <a href="article/case-01.html" class="case-card fade-in" style="background-image:url('images/gears.svg')">
                 <div class="case-overlay"></div>
                 <div class="case-info">
                     <h3>汽车内饰件模具</h3>
@@ -239,7 +241,7 @@
                     <span class="case-tag">汽车零部件</span>
                 </div>
             </a>
-            <a href="#" class="case-card fade-in" style="background-image:url('images/cnc.jpg')">
+            <a href="#" class="case-card fade-in" style="background-image:url('images/mold-detail.svg')">
                 <div class="case-overlay"></div>
                 <div class="case-info">
                     <h3>医疗器械精密模具</h3>
@@ -247,7 +249,7 @@
                     <span class="case-tag">医疗器械</span>
                 </div>
             </a>
-            <a href="#" class="case-card fade-in" style="background-image:url('images/factory.jpg')">
+            <a href="#" class="case-card fade-in" style="background-image:url('images/factory.svg')">
                 <div class="case-overlay"></div>
                 <div class="case-info">
                     <h3>电子连接器模具</h3>
@@ -255,7 +257,7 @@
                     <span class="case-tag">电子电器</span>
                 </div>
             </a>
-            <a href="#" class="case-card fade-in" style="background-image:url('images/mold-detail.jpg')">
+            <a href="#" class="case-card fade-in" style="background-image:url('images/product-parts.svg')">
                 <div class="case-overlay"></div>
                 <div class="case-info">
                     <h3>日用品批量注塑</h3>
@@ -276,7 +278,7 @@
         <div class="equipment-grid">
             <div class="equipment-card fade-in">
                 <div class="equipment-img">
-                    <img src="images/injection-machine.jpg" alt="注塑机" loading="lazy">
+                    <img src="images/injection-machine.svg" alt="精密注塑机">
                 </div>
                 <div class="equipment-info">
                     <h3>精密注塑机</h3>
@@ -285,7 +287,7 @@
             </div>
             <div class="equipment-card fade-in">
                 <div class="equipment-img">
-                    <img src="images/cnc.jpg" alt="CNC加工中心" loading="lazy">
+                    <img src="images/cnc.svg" alt="CNC加工中心">
                 </div>
                 <div class="equipment-info">
                     <h3>CNC加工中心</h3>
@@ -294,11 +296,11 @@
             </div>
             <div class="equipment-card fade-in">
                 <div class="equipment-img">
-                    <img src="images/quality.jpg" alt="检测设备" loading="lazy">
+                    <img src="images/quality.svg" alt="三坐标测量仪">
                 </div>
                 <div class="equipment-info">
-                    <h3>品质检测设备</h3>
-                    <p>三坐标测量仪、投影仪、硬度计等全套检测设备，确保每件产品符合规格要求。</p>
+                    <h3>三坐标测量仪</h3>
+                    <p>三坐标测量仪（CMM）精度达±0.005mm，全套检测设备确保每件产品符合规格要求。</p>
                 </div>
             </div>
         </div>
@@ -315,7 +317,7 @@
             <div class="contact-grid">
                 <div class="contact-item">
                     <label>地址</label>
-                    <span>成都经济技术开发区文柏大道 889 号</span>
+                    <span>成都经济技术开发区<br>文柏大道 889 号</span>
                 </div>
                 <div class="contact-item">
                     <label>电话</label>
@@ -329,9 +331,6 @@
                     <label>网址</label>
                     <span>www.borod.cn</span>
                 </div>
-            </div>
-            <div class="contact-map">
-                <iframe src="https://uri.amap.com/marker?position=104.2631,30.5728&name=成都博睿模具有限公司&src=bored.cn" width="100%" height="320" style="border:0;border-radius:8px;" allowfullscreen loading="lazy"></iframe>
             </div>
         </div>
     </section>

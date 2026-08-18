@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bgGear" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a1628"/>
+      <stop offset="100%" stop-color="#1a3050"/>
+    </linearGradient>
+    <linearGradient id="steelGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#9ab4ce"/>
+      <stop offset="50%" stop-color="#5a7592"/>
+      <stop offset="100%" stop-color="#1f3346"/>
+    </linearGradient>
+  </defs>
+  
+  <rect width="800" height="600" fill="url(#bgGear)"/>
+  
+  <!-- 网格 -->
+  <g opacity="0.1">
+    <pattern id="gridGear" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#00d4ff" stroke-width="0.5"/>
+    </pattern>
+    <rect width="800" height="600" fill="url(#gridGear)"/>
+  </g>
+  
+  <!-- 传动齿轮组 -->
+  
+  <!-- 大齿轮（中心） -->
+  <g transform="translate(400, 300)">
+    <g fill="url(#steelGrad)" stroke="#00d4ff" stroke-width="1">
+      <!-- 齿（12个） -->
+      <rect x="-15" y="-200" width="30" height="35"/>
+      <rect x="-15" y="165" width="30" height="35"/>
+      <rect x="-200" y="-15" width="35" height="30"/>
+      <rect x="165" y="-15" width="35" height="30"/>
+      
+      <rect x="-15" y="-200" width="30" height="35" transform="rotate(30)"/>
+      <rect x="-15" y="165" width="30" height="35" transform="rotate(30)"/>
+      <rect x="-200" y="-15" width="35" height="30" transform="rotate(30)"/>
+      <rect x="165" y="-15" width="35" height="30" transform="rotate(30)"/>
+      
+      <rect x="-15" y="-200" width="30" height="35" transform="rotate(60)"/>
+      <rect x="-15" y="165" width="30" height="35" transform="rotate(60)"/>
+      <rect x="-200" y="-15" width="35" height="30" transform="rotate(60)"/>
+      <rect x="165" y="-15" width="35" height="30" transform="rotate(60)"/>
+      
+      <rect x="-15" y="-200" width="30" height="35" transform="rotate(120)"/>
+      <rect x="-15" y="165" width="30" height="35" transform="rotate(120)"/>
+      <rect x="-200" y="-15" width="35" height="30" transform="rotate(120)"/>
+      <rect x="165" y="-15" width="35" height="30" transform="rotate(120)"/>
+      
+      <rect x="-15" y="-200" width="30" height="35" transform="rotate(150)"/>
+      <rect x="-15" y="165" width="30" height="35" transform="rotate(150)"/>
+      <rect x="-200" y="-15" width="35" height="30" transform="rotate(150)"/>
+      <rect x="165" y="-15" width="35" height="30" transform="rotate(150)"/>
+    </g>
+    
+    <!-- 主体圆 -->
+    <circle cx="0" cy="0" r="170" fill="url(#steelGrad)" stroke="#00d4ff" stroke-width="1.2"/>
+    <!-- 内圈 -->
+    <circle cx="0" cy="0" r="130" fill="none" stroke="#00d4ff" stroke-width="0.6" opacity="0.6"/>
+    <circle cx="0" cy="0" r="90" fill="none" stroke="#00d4ff" stroke-width="0.6" opacity="0.6"/>
+    <!-- 中心孔 -->
+    <circle cx="0" cy="0" r="50" fill="#0a1628" stroke="#00ff88" stroke-width="1.2"/>
+    <circle cx="0" cy="0" r="20" fill="#1a3050" stroke="#00ff88" stroke-width="0.5"/>
+    <!-- 键槽 -->
+    <rect x="-4" y="-30" width="8" height="20" fill="#0a1628" stroke="#00ff88" stroke-width="0.4"/>
+    
+    <!-- 装饰线条（径向） -->
+    <g stroke="#00d4ff" stroke-width="0.4" opacity="0.4">
+      <line x1="0" y1="-170" x2="0" y2="-130"/>
+      <line x1="0" y1="170" x2="0" y2="130"/>
+      <line x1="-170" y1="0" x2="-130" y2="0"/>
+      <line x1="170" y1="0" x2="130" y2="0"/>
+      <line x1="-120" y1="-120" x2="-92" y2="-92"/>
+      <line x1="120" y1="120" x2="92" y2="92"/>
+      <line x1="120" y1="-120" x2="92" y2="-92"/>
+      <line x1="-120" y1="120" x2="-92" y2="92"/>
+    </g>
+  </g>
+  
+  <!-- 小齿轮（左上） -->
+  <g transform="translate(140, 140)">
+    <g fill="url(#steelGrad)" stroke="#00d4ff" stroke-width="0.8">
+      <rect x="-10" y="-95" width="20" height="20"/>
+      <rect x="-10" y="75" width="20" height="20"/>
+      <rect x="-95" y="-10" width="20" height="20"/>
+      <rect x="75" y="-10" width="20" height="20"/>
+      <rect x="-10" y="-95" width="20" height="20" transform="rotate(45)"/>
+      <rect x="-10" y="75" width="20" height="20" transform="rotate(45)"/>
+      <rect x="-95" y="-10" width="20" height="20" transform="rotate(45)"/>
+      <rect x="75" y="-10" width="20" height="20" transform="rotate(45)"/>
+    </g>
+    <circle cx="0" cy="0" r="75" fill="url(#steelGrad)" stroke="#00d4ff" stroke-width="0.8"/>
+    <circle cx="0" cy="0" r="25" fill="#0a1628" stroke="#00ff88" stroke-width="0.8"/>
+    <circle cx="0" cy="0" r="10" fill="#1a3050" stroke="#00ff88" stroke-width="0.4"/>
+  </g>
+  
+  <!-- 小齿轮（右下） -->
+  <g transform="translate(660, 460)">
+    <g fill="url(#steelGrad)" stroke="#00d4ff" stroke-width="0.8">
+      <rect x="-10" y="-95" width="20" height="20"/>
+      <rect x="-10" y="75" width="20" height="20"/>
+      <rect x="-95" y="-10" width="20" height="20"/>
+      <rect x="75" y="-10" width="20" height="20"/>
+      <rect x="-10" y="-95" width="20" height="20" transform="rotate(45)"/>
+      <rect x="-10" y="75" width="20" height="20" transform="rotate(45)"/>
+      <rect x="-95" y="-10" width="20" height="20" transform="rotate(45)"/>
+      <rect x="75" y="-10" width="20" height="20" transform="rotate(45)"/>
+    </g>
+    <circle cx="0" cy="0" r="75" fill="url(#steelGrad)" stroke="#00d4ff" stroke-width="0.8"/>
+    <circle cx="0" cy="0" r="25" fill="#0a1628" stroke="#00ff88" stroke-width="0.8"/>
+    <circle cx="0" cy="0" r="10" fill="#1a3050" stroke="#00ff88" stroke-width="0.4"/>
+  </g>
+  
+  <!-- 角标 -->
+  <g transform="translate(40, 570)" fill="#00d4ff" opacity="0.6">
+    <text font-family="monospace" font-size="9" letter-spacing="2">PRECISION GEAR DRIVE · CAD/CAM ENGINEERING · BOROD MOULD</text>
+  </g>
+</svg>

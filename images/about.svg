@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bgTeam" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a1628"/>
+      <stop offset="100%" stop-color="#1a3050"/>
+    </linearGradient>
+    <linearGradient id="personGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#5a7592"/>
+      <stop offset="100%" stop-color="#3d5468"/>
+    </linearGradient>
+    <linearGradient id="tableGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#9ab4ce"/>
+      <stop offset="100%" stop-color="#3d5468"/>
+    </linearGradient>
+  </defs>
+  
+  <rect width="800" height="600" fill="url(#bgTeam)"/>
+  
+  <!-- 网格 -->
+  <g opacity="0.1">
+    <pattern id="gridTeam" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#00d4ff" stroke-width="0.5"/>
+    </pattern>
+    <rect width="800" height="600" fill="url(#gridTeam)"/>
+  </g>
+  
+  <!-- 背景：白板（讨论图纸） -->
+  <g transform="translate(80, 80)" opacity="0.5">
+    <rect x="0" y="0" width="280" height="180" fill="#1a3050" stroke="#00d4ff" stroke-width="1"/>
+    <!-- 蓝图内容 -->
+    <g stroke="#00d4ff" stroke-width="0.5" fill="none">
+      <line x1="20" y1="30" x2="260" y2="30"/>
+      <line x1="20" y1="50" x2="240" y2="50"/>
+      <line x1="20" y1="70" x2="260" y2="70"/>
+      <!-- 模具轮廓 -->
+      <rect x="60" y="90" width="160" height="60" fill="none"/>
+      <line x1="140" y1="90" x2="140" y2="150" stroke-dasharray="3,2"/>
+    </g>
+  </g>
+  
+  <!-- 长桌 -->
+  <g transform="translate(80, 340)">
+    <!-- 桌面 -->
+    <rect x="0" y="0" width="640" height="60" fill="url(#tableGrad)" stroke="#00d4ff" stroke-width="1"/>
+    <line x1="20" y1="20" x2="620" y2="20" stroke="#00d4ff" stroke-width="0.4" opacity="0.4"/>
+    <line x1="20" y1="40" x2="620" y2="40" stroke="#00d4ff" stroke-width="0.4" opacity="0.4"/>
+    <!-- 桌腿 -->
+    <rect x="20" y="60" width="20" height="80" fill="url(#personGrad)" stroke="#00d4ff" stroke-width="0.5"/>
+    <rect x="600" y="60" width="20" height="80" fill="url(#personGrad)" stroke="#00d4ff" stroke-width="0.5"/>
+    
+    <!-- 桌面上的图纸和工具 -->
+    <g transform="translate(60, 18)">
+      <!-- 模具图纸 -->
+      <rect x="0" y="0" width="80" height="30" fill="#fff" opacity="0.85"/>
+      <line x1="6" y1="6" x2="74" y2="6" stroke="#001428" stroke-width="0.3"/>
+      <line x1="6" y1="12" x2="74" y2="12" stroke="#001428" stroke-width="0.3"/>
+      <line x1="6" y1="18" x2="60" y2="18" stroke="#001428" stroke-width="0.3"/>
+      <rect x="20" y="22" width="40" height="6" fill="none" stroke="#001428" stroke-width="0.3"/>
+    </g>
+    
+    <!-- 笔记本电脑 -->
+    <g transform="translate(220, 8)">
+      <path d="M 0 30 L 60 30 L 56 4 L 4 4 Z" fill="#3d5468" stroke="#00d4ff" stroke-width="0.5"/>
+      <rect x="4" y="6" width="52" height="20" fill="#001428" stroke="#00ff88" stroke-width="0.3"/>
+    </g>
+    
+    <!-- 第二个电脑 -->
+    <g transform="translate(380, 8)">
+      <path d="M 0 30 L 60 30 L 56 4 L 4 4 Z" fill="#3d5468" stroke="#00d4ff" stroke-width="0.5"/>
+      <rect x="4" y="6" width="52" height="20" fill="#001428" stroke="#00ff88" stroke-width="0.3"/>
+    </g>
+    
+    <!-- 咖啡杯 -->
+    <g transform="translate(500, 15)">
+      <ellipse cx="0" cy="0" rx="10" ry="3" fill="#3d5468" stroke="#00d4ff" stroke-width="0.5"/>
+      <path d="M -10 0 L -8 14 L 8 14 L 10 0" fill="#3d5468" stroke="#00d4ff" stroke-width="0.5"/>
+    </g>
+  </g>
+  
+  <!-- 工程团队（剪影） -->
+  <g>
+    <!-- 工程师1（站立，讲解） -->
+    <g transform="translate(180, 200)">
+      <!-- 头部 -->
+      <circle cx="0" cy="0" r="22" fill="url(#personGrad)" stroke="#00d4ff" stroke-width="1"/>
+      <!-- 身体 -->
+      <path d="M -30 30 L -30 130 L 30 130 L 30 30 L 20 22 L -20 22 Z" fill="url(#personGrad)" stroke="#00d4ff" stroke-width="1"/>
+      <!-- 手臂（指向白板） -->
+      <line x1="20" y1="60" x2="80" y2="40" stroke="#00d4ff" stroke-width="3"/>
+      <circle cx="80" cy="40" r="6" fill="#00ff88" stroke="#00d4ff" stroke-width="0.5"/>
+      <!-- 工程师图标（安全帽+工服） -->
+      <path d="M -22 -8 L 22 -8 L 18 -22 L -18 -22 Z" fill="#00ff88" stroke="#00d4ff" stroke-width="0.5"/>
+    </g>
+    
+    <!-- 工程师2（坐着） -->
+    <g transform="translate(330, 250)">
+      <circle cx="0" cy="0" r="22" fill="url(#personGrad)" stroke="#00d4ff" stroke-width="1"/>
+      <path d="M -30 30 L -30 100 L 30 100 L 30 30 L 20 22 L -20 22 Z" fill="url(#personGrad)" stroke="#00d4ff" stroke-width="1"/>
+      <path d="M -22 -8 L 22 -8 L 18 -22 L -18 -22 Z" fill="#00ff88" stroke="#00d4ff" stroke-width="0.5"/>
+    </g>
+    
+    <!-- 工程师3（坐着） -->
+    <g transform="translate(450, 250)">
+      <circle cx="0" cy="0" r="22" fill="url(#personGrad)" stroke="#00d4ff" stroke-width="1"/>
+      <path d="M -30 30 L -30 100 L 30 100 L 30 30 L 20 22 L -20 22 Z" fill="url(#personGrad)" stroke="#00d4ff" stroke-width="1"/>
+      <path d="M -22 -8 L 22 -8 L 18 -22 L -18 -22 Z" fill="#00ff88" stroke="#00d4ff" stroke-width="0.5"/>
+    </g>
+    
+    <!-- 工程师4（坐着） -->
+    <g transform="translate(570, 250)">
+      <circle cx="0" cy="0" r="22" fill="url(#personGrad)" stroke="#00d4ff" stroke-width="1"/>
+      <path d="M -30 30 L -30 100 L 30 100 L 30 30 L 20 22 L -20 22 Z" fill="url(#personGrad)" stroke="#00d4ff" stroke-width="1"/>
+      <path d="M -22 -8 L 22 -8 L 18 -22 L -18 -22 Z" fill="#00ff88" stroke="#00d4ff" stroke-width="0.5"/>
+    </g>
+  </g>
+  
+  <!-- 角标 -->
+  <g transform="translate(40, 570)" fill="#00d4ff" opacity="0.6">
+    <text font-family="monospace" font-size="9" letter-spacing="2">ENGINEERING TEAM · 20+ YEARS EXPERTISE · BOROD MOULD</text>
+  </g>
+</svg>

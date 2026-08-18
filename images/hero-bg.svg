@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="heroBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#040810"/>
+      <stop offset="50%" stop-color="#0a1628"/>
+      <stop offset="100%" stop-color="#020610"/>
+    </linearGradient>
+    <linearGradient id="machineGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#7a8fa6"/>
+      <stop offset="50%" stop-color="#3d5468"/>
+      <stop offset="100%" stop-color="#1f3346"/>
+    </linearGradient>
+    <radialGradient id="lightGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00d4ff" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#00d4ff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  
+  <!-- 深色背景 -->
+  <rect width="1920" height="1080" fill="url(#heroBg)"/>
+  
+  <!-- 网格背景 -->
+  <g opacity="0.08">
+    <pattern id="bgGrid" width="80" height="80" patternUnits="userSpaceOnUse">
+      <path d="M 80 0 L 0 0 0 80" fill="none" stroke="#00d4ff" stroke-width="1"/>
+    </pattern>
+    <rect width="1920" height="1080" fill="url(#bgGrid)"/>
+  </g>
+  
+  <!-- 光晕 -->
+  <circle cx="200" cy="200" r="400" fill="url(#lightGlow)"/>
+  <circle cx="1700" cy="900" r="500" fill="url(#lightGlow)"/>
+  
+  <!-- 远景：工厂剪影 -->
+  <g opacity="0.3">
+    <rect x="0" y="700" width="1920" height="200" fill="#0a1628"/>
+    <!-- 厂房窗户 -->
+    <g fill="#00d4ff" opacity="0.4">
+      <rect x="100" y="720" width="30" height="40"/>
+      <rect x="150" y="720" width="30" height="40"/>
+      <rect x="200" y="720" width="30" height="40"/>
+      <rect x="250" y="720" width="30" height="40"/>
+      <rect x="300" y="720" width="30" height="40"/>
+      <rect x="350" y="720" width="30" height="40"/>
+      <rect x="400" y="720" width="30" height="40"/>
+      <rect x="1450" y="720" width="30" height="40"/>
+      <rect x="1500" y="720" width="30" height="40"/>
+      <rect x="1550" y="720" width="30" height="40"/>
+      <rect x="1600" y="720" width="30" height="40"/>
+      <rect x="1650" y="720" width="30" height="40"/>
+      <rect x="1700" y="720" width="30" height="40"/>
+      <rect x="1750" y="720" width="30" height="40"/>
+    </g>
+    <!-- 烟囱 -->
+    <rect x="500" y="600" width="40" height="180" fill="#1f3346"/>
+    <rect x="650" y="650" width="30" height="130" fill="#1f3346"/>
+    <rect x="1200" y="620" width="35" height="160" fill="#1f3346"/>
+    <rect x="1350" y="660" width="25" height="120" fill="#1f3346"/>
+  </g>
+  
+  <!-- 中景：注塑机 -->
+  <g transform="translate(120, 280)" opacity="0.85">
+    <!-- 机身主体 -->
+    <rect x="0" y="100" width="380" height="400" fill="url(#machineGrad)" stroke="#00d4ff" stroke-width="1"/>
+    <!-- 控制面板 -->
+    <rect x="20" y="120" width="120" height="80" fill="#0a1628" stroke="#00d4ff" stroke-width="0.8"/>
+    <line x1="30" y1="140" x2="130" y2="140" stroke="#00ff88" stroke-width="0.4"/>
+    <line x1="30" y1="155" x2="130" y2="155" stroke="#00ff88" stroke-width="0.4"/>
+    <line x1="30" y1="170" x2="100" y2="170" stroke="#00ff88" stroke-width="0.4"/>
+    <!-- 模板 -->
+    <rect x="160" y="240" width="200" height="20" fill="#5a7592" stroke="#00d4ff" stroke-width="0.6"/>
+    <rect x="160" y="350" width="200" height="20" fill="#5a7592" stroke="#00d4ff" stroke-width="0.6"/>
+    <!-- 立柱 -->
+    <rect x="170" y="260" width="12" height="90" fill="#3d5468" stroke="#00d4ff" stroke-width="0.4"/>
+    <rect x="338" y="260" width="12" height="90" fill="#3d5468" stroke="#00d4ff" stroke-width="0.4"/>
+    <!-- 料斗 -->
+    <path d="M 60 100 L 80 60 L 140 60 L 160 100 Z" fill="#3d5468" stroke="#00d4ff" stroke-width="0.6"/>
+    <!-- 螺杆筒 -->
+    <rect x="80" y="120" width="60" height="20" fill="#1f3346" stroke="#00d4ff" stroke-width="0.4"/>
+  </g>
+  
+  <!-- 右侧：另一台机器 -->
+  <g transform="translate(1380, 320)" opacity="0.7">
+    <rect x="0" y="100" width="320" height="350" fill="url(#machineGrad)" stroke="#00d4ff" stroke-width="1"/>
+    <rect x="20" y="120" width="100" height="60" fill="#0a1628" stroke="#00d4ff" stroke-width="0.6"/>
+    <rect x="140" y="220" width="160" height="18" fill="#5a7592" stroke="#00d4ff" stroke-width="0.4"/>
+    <rect x="140" y="320" width="160" height="18" fill="#5a7592" stroke="#00d4ff" stroke-width="0.4"/>
+  </g>
+  
+  <!-- 顶部技术线 -->
+  <g stroke="#00d4ff" stroke-width="0.6" opacity="0.4" fill="none">
+    <path d="M 0 100 L 1920 100"/>
+    <path d="M 0 150 L 1920 150" stroke-dasharray="4,8"/>
+    <path d="M 0 200 L 1920 200"/>
+  </g>
+  
+  <!-- 角标 -->
+  <g transform="translate(60, 60)" fill="#00d4ff" opacity="0.5">
+    <text font-family="monospace" font-size="12" letter-spacing="3">BOROD MOULD · SINCE 2004</text>
+  </g>
+  <g transform="translate(60, 1020)" fill="#00d4ff" opacity="0.5">
+    <text font-family="monospace" font-size="10" letter-spacing="2">PRECISION · INNOVATION · QUALITY</text>
+  </g>
+</svg>
