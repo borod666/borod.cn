@@ -42,6 +42,12 @@ body {
     animation: fadeInUp 1s ease forwards;
 }
 .loader-logo span { color: #00d4ff; }
+.loader-logo-img {
+    height: 80px;
+    margin-bottom: 50px;
+    opacity: 0;
+    animation: fadeInUp 1s ease forwards;
+}
 .loader-bar {
     width: 200px;
     height: 2px;
@@ -105,8 +111,12 @@ nav::before {
 .logo {
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 16px;
     text-decoration: none;
+}
+.logo-img {
+    height: 36px;
+    display: block;
 }
 .logo-borod {
     font-size: 22px;
@@ -117,10 +127,11 @@ nav::before {
 .logo-borod span { color: #00d4ff; }
 .logo-text {
     font-size: 22px;
-    font-weight: 400;
+    font-weight: 500;
     letter-spacing: 6px;
-    color: rgba(255,255,255,0.45);
+    color: #ffffff;
     font-family: 'Microsoft YaHei', 'PingFang SC', sans-serif;
+    margin-left: 6px;
 }
 .nav-links {
     display: flex;
